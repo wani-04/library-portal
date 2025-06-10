@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Library Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f7f8fc;
+color: #333;
+}
+nav {
+background-color: #004d99;
+padding: 15px 20px;
+color: white;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+nav h1 {
+font-size: 24px;
+}
+header {
+background: linear-gradient(to right, #6fb1fc, #4364f7);
+color: white;
+padding: 60px 20px;
+text-align: center;
+}
+header h2 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+header p {
+font-size: 18px;
+}
+.search-bar {
+margin: 20px auto;
+max-width: 500px;
+display: flex;
+}
+.search-bar input {
+flex: 1;
+padding: 12px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 8px 0 0 8px;
+outline: none;
+}
+.search-bar button {
+padding: 12px 20px;
+font-size: 16px;
+background-color: #004d99;
+color: white;
+border: none;
+border-radius: 0 8px 8px 0;
+cursor: pointer;
+}
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+padding: 40px 20px;
+max-width: 1000px;
+margin: auto;
+}
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.card h3 {
+margin-bottom: 10px;
+color: #004d99;
+}
+.featured {
+background-color: #e9f0ff;
+padding: 40px 20px;
+text-align: center;
+}
+.featured h2 {
+margin-bottom: 20px;
+}
+.footer {
+text-align: center;
+padding: 20px;
+background-color: #004d99;
+color: white;
+margin-top: 40px;
+}
+</style>
+</head>
+<body>
+<nav>
+<h1> Library Portal</h1>
+</nav>
+<header>
+<h2>Welcome to Your Campus Library</h2>
+<p>Explore resources, get help, and find what you need to succeed</p>
+<div class="search-bar">
+<input type="text" placeholder="Search books, journals, articles..." />
+<button> Search</button>
+</div>
+</header>
+<section class="cards">
+<div class="card">
+<h3> Catalog</h3>
+<p>Browse the entire library collection of books, media, and more.</p>
+</div>
+<div class="card">
+<h3> E-Books</h3>
+<p>Access thousands of academic and leisure e-books anywhere.</p>
+</div>
+<div class="card">
+<h3> Ask a Librarian</h3>
+<p>Need help? Chat or email our helpful librarians anytime.</p>
+</div>
+<div class="card">
+<h3> Opening Hours</h3>
+<p>View our current operating hours and holiday schedules.</p>
+</div>
+</section>
+<section class="featured">
+<h2> Featured Resource</h2>
+<p><strong>Digital Archives:</strong> Discover historical documents, rare books, and more in our special collections.</p>
+</section>
+<footer class="footer">
+Powered by Your Library | Stay curious, keep learning!
+</footer>
+</body>
+</html>
